@@ -29850,7 +29850,9 @@ with pkgs;
     libjpeg = libjpeg8;
   };
 
-  bitwig-studio = bitwig-studio5;
+  bitwig-studio = callPackage ../applications/audio/bitwig-studio/bitwig-studio5.0.11.nix {
+    libjpeg = libjpeg8;
+  };
 
   bgpdump = callPackage ../tools/networking/bgpdump { };
 
