@@ -41052,4 +41052,6 @@ with pkgs;
   dillo = callPackage ../by-name/di/dillo/package.nix {
     fltk = fltk13;
   };
+  
+  estrange = callPackage ../by-name/es/estrange/package.nix { };
 }
